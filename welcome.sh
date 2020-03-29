@@ -29,3 +29,11 @@ fullDay=8
 perHour=20
 ans=$(($perHour * $fullDay))
 echo "calculate Daily Employee Wage : $ans" 
+
+#addPartTime
+
+Hour=20
+Day=8
+partDay=4
+ans1=$(($Hour * (($Day + $partDay))))
+echo "add part time employee and wage : $ans1"
