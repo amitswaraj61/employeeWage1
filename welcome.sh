@@ -21,3 +21,11 @@ for(( i=1 ; i <=num; i++ ))
  done
 echo "Employee is presnt : $present"
 echo "Employee is absent : $absent"
+
+
+#calculateDailyWage
+
+fullDay=8
+perHour=20
+ans=$(($perHour * $fullDay))
+echo "calculate Daily Employee Wage : $ans" 
