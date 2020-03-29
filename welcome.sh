@@ -71,3 +71,35 @@ read ch
         esac
        }
         caseStatement
+
+#uc5
+
+empWagePerHr=20
+empFullTime=1
+empPartTime=2
+daysPerMonth=20
+totalSalary=0
+function EmployeeMang() {
+
+for (( i=1; i<=$daysPerMonth; i++ ))
+do
+        random=$((RANDOM%3))
+        case $random in
+        $empFullTime )
+             empHr=8 ;;
+
+        $empPartTime )
+              empHr=4 ;;
+
+         * )
+              empHr=0 ;;
+         esac
+
+         salary=$(( $empWagePerHr * $empHr ))
+         echo "daily salary := $salary"
+         TotalSalary=$(( $salary + $totalSalary ))
+ done
+}
+
+EmployeeMang
+echo "total salary is = $TotalSalary"
